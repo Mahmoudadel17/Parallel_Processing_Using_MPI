@@ -45,12 +45,14 @@ develop a parallel program that calculate matrix multiplication .
 # Problem 3 Statement: “Counting Primes”
 Write a parallel C program to count the prime numbers within an input range using the
 following two methods, then compare the execution times of both programs:
-       a) MPI_Bcast and MPI_Reduce ONLY
-       b) MPI_Send and MPI_RecvONLY
-       Given
+
+
+- MPI_Bcast and MPI_Reduce ONLY
+- MPI_Send and MPI_RecvONLY
+-       Given
        - Lower bound number x
        - Upper bound number y
-       Output
+-       Output
        - Count of prime numbers occurring between x and y.
 Parallelization Scenario
 ## MasterProcess:
