@@ -80,20 +80,26 @@ MPI_Send).
 handle this case.
 
 
+## Screenshots
+![0d3b382a-9b91-45c8-bae1-8dea09044d98](https://user-images.githubusercontent.com/100792508/229607590-e9391741-9e35-4428-92e5-c48b2f1b0dfe.jpg)
+
+![b4a8c5a2-d284-47f9-a6dd-9f3428250271](https://user-images.githubusercontent.com/100792508/229607717-346a8858-65ca-4871-9c80-9a1a447aa16b.jpg)
+
+
 # Problem 4 Statement : Encrypt a Message (Caesar Cipher)
-    [Using BCast, Scatter and Gather ONLY]
-You are required to take a message from a file and encrypt the message using
+   [Using BCast, Scatter and Gather ONLY]
+- You are required to take a message from a file and encrypt the message using
 caesar cipher and store the output in a new file. The encryption can be
 represented using modular arithmetic by first transforming the letters into
 numbers, according to the scheme, A = 0, B = 1,…, Z = 25. Encryption of a letter x by
 a shift n can be described mathematically as:
-En(x) = (x + n) mod 26
+                        En(x) = (x + n) mod 26
 
 
-Any other character outside the range from A to Z (or a to z) is transferred to the
+- Any other character outside the range from A to Z (or a to z) is transferred to the
 output file as it is.
-Input: filename and key/shift value.
-Output: new file that contains the encrypted message.
+       Input: filename and key/shift value.
+       Output: new file that contains the encrypted message.
 
 
 ## Master Scenario:
@@ -115,12 +121,30 @@ Output: new file that contains the encrypted message.
 - Ciphertext.txt: QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD
 
 
+## Screenshots
+![2023-04-24 13_54_59-SL5 5  Running  - Oracle VM VirtualBox](https://user-images.githubusercontent.com/100792508/233989987-908a7984-5e15-4bc4-ab58-f2ea604d0252.png)
+
+
+# Problem 5  Statement : Value of PI
+  [Using Bcast and Reduce ONLY]
+- The following piece of code is a serial program to calculate the value of PI using
+integration, give it a try and run it to see the output.
+
+![2023-04-24 13_42_54-HPC_Parallel Processing-A3 -2023- pdf - Adobe Acrobat Reader (64-bit)](https://user-images.githubusercontent.com/100792508/233989976-01cfa23e-b59b-4735-898b-b953c4de588b.png)
+
+You are required to parallelize the program by distributing the number of steps
+on multiple processes and broadcast the step value to all slaves:
+- Each slave process will receive the step and the range it will work on, then
+calculate its partial sum.
+- Master process will divide the number of steps into ranges and broadcast
+the value of step, then perform reduce to output the value of PI using the
+reduced sum.
+
+
 
 ## Screenshots
-![0d3b382a-9b91-45c8-bae1-8dea09044d98](https://user-images.githubusercontent.com/100792508/229607590-e9391741-9e35-4428-92e5-c48b2f1b0dfe.jpg)
 
-![b4a8c5a2-d284-47f9-a6dd-9f3428250271](https://user-images.githubusercontent.com/100792508/229607717-346a8858-65ca-4871-9c80-9a1a447aa16b.jpg)
-
+![2023-04-24 13_55_59-SL5 5  Running  - Oracle VM VirtualBox](https://user-images.githubusercontent.com/100792508/233989999-e417b251-f0e0-46bc-8368-4453582e8faf.png)
 
 
 
