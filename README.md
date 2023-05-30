@@ -186,13 +186,13 @@ Output: mean, variance, standard deviation
 ## Sample input/output:
 
 ## Sample1:
-Array size: 8
-Array elements: 2, 4, 4, 4, 5, ,5, 7, 9
-Output: Mean = 5.0, Variance = 4.0, Standard deviation = 2.0
+- Array size: 8
+- Array elements: 2, 4, 4, 4, 5, ,5, 7, 9
+- Output: Mean = 5.0, Variance = 4.0, Standard deviation = 2.0
 ## Sample2:
-Array size: 7
-Array elements: 4, 5, 6, 6, 7, 9, 12
-Output: Mean = 7.0, Variance = 6.2857, Standard deviation = 2.5071
+- Array size: 7
+- Array elements: 4, 5, 6, 6, 7, 9, 12
+- Output: Mean = 7.0, Variance = 6.2857, Standard deviation = 2.5071
 
 
 ## Authors
