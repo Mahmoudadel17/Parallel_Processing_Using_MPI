@@ -168,8 +168,8 @@ result has a remainder, then send this remainder to the last process (the
 process that has the rank "n-1" or let the master process work on it).
 
 - The master process calculates the mean (dividing the total sum by the size
-
 of the elements) and sends it to all processes.
+
 - Each process calculates the squared difference on its portion of data.
 
 - The master process then calculates the variance (dividing the total
